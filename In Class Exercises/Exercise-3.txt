@@ -1,0 +1,20 @@
+							Exercise - 3 (Lists)
+
+
+No. 1	: Write a Python program to multiply all the items in a list.
+
+
+
+
+No. 2	: Write a Python program to sum all the items in a list.
+
+
+
+
+No. 3	: Write a Python program to get the smallest number from a list. 
+
+
+
+
+No. 4	: Write a Python program to count the number of strings where the string length is 2 or more and
+	  the first and last character are same from a given list of strings.

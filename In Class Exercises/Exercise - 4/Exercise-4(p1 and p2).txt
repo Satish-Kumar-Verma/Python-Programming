@@ -1,0 +1,61 @@
+							Exercise - 4 (Tuples)
+
+
+No.1	: Write a Python program to get a list, sorted in increasing order by the last element in each tuple from a given
+	  list of non-empty tuples.
+	
+	  list = [(1, 2), (7, 4, 9), (0, 1, 8), (9, 2, 1)]
+	  reslult_list = [(9, 2, 1), (1, 2), (0, 1, 8), (7, 4, 9)]
+
+No.2	: Write a Python program to check a tuple is empty or not.
+
+
+
+
+
+No.3	: Write a Python program to remove duplicates from a tuple. (Remember : Tuple is immutable(unchangeable)
+
+
+
+
+
+No.4	: Write a Python program to print a specified tuple after removing the 0th, 4th and 5th elements. 
+	  (Remember : Tuple is immutable(unchangeable).
+
+
+					
+					Part - 2
+
+
+No.5	: Write a Python program to get a list, sorted in decreasing order by the last element in each tuple from a given
+	  list of non-empty tuples.
+	
+	  list = [(1, 2), (7, 4, 9), (0, 1, 8), (9, 2, 1)]
+	  reslult_list = [(7, 4, 9), (0, 1, 8), (1, 2), (9, 2, 1)]
+
+No.6	: Write a Python program to find the repeated items of a tuple. 
+
+
+
+
+
+No.7	: Write a Python program to check whether an element exists within a tuple.
+
+
+
+
+
+No.8	: Write a Python program to get the 4th element and 4th element from last of a tuple.
+
+
+
+
+
+No.9	: Write a Python program to find the index of an item of a tuple.
+
+
+
+
+
+No.10	: Write a Python program to reverse a tuple.
+

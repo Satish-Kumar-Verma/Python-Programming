@@ -1,0 +1,3 @@
+						In Class Exercise - 1 + 2
+
+No.1 : Write a python program which takes positive numbers as input and print their sum until an odd number is given(as input).
