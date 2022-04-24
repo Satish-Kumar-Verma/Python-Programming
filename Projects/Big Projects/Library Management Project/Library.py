@@ -1,5 +1,5 @@
 from book import Book
-from logs import *
+from logging import *
 
 with open("Available_Books.dat", "a") as f:
     pass

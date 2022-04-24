@@ -1,5 +1,5 @@
 from Person import Person
-from logs import *
+from logging import *
 from Library import Library
 with open("User-accounts.dat", "a") as f:
     pass

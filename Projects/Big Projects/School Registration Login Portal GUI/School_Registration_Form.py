@@ -5,7 +5,7 @@ from PyQt5.uic import loadUiType
 from Person import Person
 import pickle
 
-ui, _ = loadUiType("login_form.ui")
+ui, _ = loadUiType("Registration_form.ui")
 
 
 class MainWindow(QMainWindow, ui):
