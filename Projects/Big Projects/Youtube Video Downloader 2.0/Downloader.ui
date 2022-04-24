@@ -120,6 +120,9 @@
            <property name="text">
             <string/>
            </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
            <property name="margin">
             <number>0</number>
            </property>
