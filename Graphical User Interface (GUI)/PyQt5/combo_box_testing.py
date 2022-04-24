@@ -19,7 +19,7 @@ class MainWindow(QMainWindow):
         self.c_box.addItem("Five")
         # self.c_box.setMaxCount(5)
 
-        # self.c_box.currentIndexChanged.connect(self.index_changed)
+        self.c_box.currentIndexChanged.connect(self.index_changed)
         # self.c_box.currentTextChanged.connect(self.text_changed)
 
         self.setCentralWidget(self.c_box)
