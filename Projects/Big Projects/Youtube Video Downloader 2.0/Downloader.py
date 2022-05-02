@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QMainWindow, QComboBox
+from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QWidget, QVBoxLayout, QLabel, QProgressBar
 from PyQt5.QtGui import QPixmap
 from PyQt5.uic import loadUiType
 import sys
@@ -6,6 +6,25 @@ from pytube import YouTube
 import requests
 
 ui, _ = loadUiType("Downloader.ui")
+
+
+class ProgressDialog(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Downloading")
+
+        self.V_layout = QVBoxLayout()
+
+        self.video_title = QLabel()
+
+        self.download_progress = QProgressBar()
+
+        self.downloaded_size = QLabel()
+
+        self.V_layout.addWidget(self.video_title)
+        self.V_layout.addWidget(self.download_progress)
+        self.V_layout.addWidget(self.downloaded_size)
+        self.setLayout(self.V_layout)
 
 
 class MainWindow(QMainWindow, ui):
@@ -33,14 +52,20 @@ class MainWindow(QMainWindow, ui):
             label_text = f"{best_res_size:.2f} MB"
             self.label_7.setText(label_text)
 
+    def on_download_complete(self):
+        dialog_box = QMessageBox.information(self, "Congratulations", "Video is downloaded successfully!")
+        if dialog_box == QMessageBox.Ok:
+            pass
+
     def download_now(self):
         if self.comboBox.currentText() == "Best Resolution":
             self.yt_video.streams.get_highest_resolution().download()
-            print("Downloaded!")
-
+            self.on_download_complete()
         else:
             self.videos[self.comboBox.currentIndex()].download()
-            print("Downloaded!")
+            self.on_download_complete()
+            progress = ProgressDialog()
+            progress.show()
 
     def search(self):
         link = self.lineEdit.text()
